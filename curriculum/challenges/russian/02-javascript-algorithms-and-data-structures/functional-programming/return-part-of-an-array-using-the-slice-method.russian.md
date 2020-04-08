@@ -13,7 +13,10 @@ localeTitle: Возвращаемая часть массива Использо
 
 ## Instructions
 <section id='instructions'>
-Используйте <code>slice</code> метод в <code>sliceArray</code> функции вернуть часть <code>anim</code> массива , учитывая предоставленные <code>beginSlice</code> и <code>endSlice</code> индексов. Функция должна возвращать массив.
+Используйте slice метод в <code>sliceArray</code> функции вернуть часть  массива , учитывая предоставленные <code>beginSlice</code> и <code>endSlice</code> индексов. Функция должна возвращать массив.
+
+
+  Используйте метод <code>Slice</code> в функции <code>sliceArray</code> для возврата части <code>anim</code> массива с учетом предоставленных индексов <code>beginSlice</code> и <code>endSlice</code>. Функция должна вернуть массив.
 </section>
 
 ## Tests
