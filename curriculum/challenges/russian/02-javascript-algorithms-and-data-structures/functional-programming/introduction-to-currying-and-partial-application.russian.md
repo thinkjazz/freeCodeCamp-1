@@ -8,9 +8,8 @@ localeTitle: Введение в каррирование и частичное 
 
 ## Description
 <section id='description'>
-The <code>arity</code> of a function is the number of arguments it requires. <code>Currying</code> a function means to convert a function of N <code>arity</code> into N functions of <code>arity</code> 1.
-In other words, it restructures a function so it takes one argument, then returns another function that takes the next argument, and so on.
-Here's an example:
+<code>Arity</code> функции - это количество аргументов, которое она требует. Функция currying означает преобразование функции N <code>arity</code> в N функций <code>arity</code> 1. Другими словами, она реструктурирует функцию таким образом, что принимает один аргумент, затем возвращает другую функцию, которая принимает следующий аргумент, и так далее. 
+ Вот пример:
 
 ```js
 //Un-curried function
@@ -30,7 +29,7 @@ const curried = x => y => x + y
 curried(1)(2) // Returns 3
 ```
 
-This is useful in your program if you can't supply all the arguments to a function at one time. You can save each function call into a variable, which will hold the returned function reference that takes the next argument when it's available. Here's an example using the <code>curried</code> function in the example above:
+Это полезно в вашей программе, если вы не можете предоставить все аргументы в функцию за один раз. Вы можете сохранить каждый вызов функции в переменную, в которой будет храниться ссылка на возвращаемую функцию, которая принимает следующий аргумент, когда он доступен. Приведем пример использования функции <code>curried</code> в примере выше:
 
 ```js
 // Call a curried function in parts:
@@ -38,8 +37,8 @@ var funcForY = curried(1);
 console.log(funcForY(2)); // Prints 3
 ```
 
-Similarly, <code>partial application</code> can be described as applying a few arguments to a function at a time and returning another function that is applied to more arguments.
-Here's an example:
+Аналогично, <code>partial application</code> можно описать как применение нескольких аргументов к функции одновременно и возврат другой функции, которая применяется к большему количеству аргументов.
+Приведем пример:
 
 ```js
 //Impartial function
